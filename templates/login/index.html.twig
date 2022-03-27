@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LoginController!{% endblock %}
+
+{% block body %}
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Eco IT</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+            	<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">A propos</a>
+						</li>
+					
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Formations
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li>
+									<a class="dropdown-item" href="#">Safe Code</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Real environnement</a>
+								</li>
+							
+								<li>
+									<a class="dropdown-item" href="#">Nature Debug</a>
+								</li>
+							</ul>
+						</li>
+	
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+						<button class="btn btn-outline-dark" type="submit">Go</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+<main class=" container text-center">
+    
+<section class="form-signin">
+  <form>
+ 
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted"><a  href="#">Des difficultés de connexion ? Cliquez ici</a></p>
+
+  </form>
+</section>
+
+
+    
+  </main>
+  	<footer class="my-5 pt-5 text-muted text-center text-small">
+			<p class="mb-1">© 2017–2020 Company Name</p>
+			<ul class="list-inline">
+				<li class="list-inline-item">
+					<a href="#">Privacy</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="#">Terms</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="#">Support</a>
+				</li>
+			</ul>
+		</footer>
+{% endblock %}
